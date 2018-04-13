@@ -230,11 +230,15 @@ jQuery(document).ready(function(){
 			.attr('disabled','disabled');
 
             console.log($('#name').val());
+            var myaccept = "true";
+            if($('#rsvpselection').val() == "declinebtn"){
+               myaccept = "false";
+            }
             var datatosend = JSON.stringify({
 			   name: $('#name').val(),
 		      	email: $('#email').val(),
-	      	   	rsvp: $('#rsvpselection').val(),
-		      	meal: $('#mealselection').val()
+	      	   	accept: myaccept,
+		      	foodchoice: $('#mealselection').val()
 		    });
             console.log(datatosend);
         $.ajax({

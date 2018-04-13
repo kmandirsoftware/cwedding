@@ -16,21 +16,18 @@ client.connect()
 module.exports = {
 
    register: function(datain,resb,callback) {
-       console.log(datain);
    var now = new Date();
    var date=dateFormat(now, "yyyy-mm-dd HH:MM:ss");
    var query = {
-     text: 'INSERT INTO users(name,accepted,mealchoice,datetimeCreated) VALUES($1, $2,$3,$4)',
-     values: [datain.name, datain.accept,datain.foodchoice,date],
+     text: 'INSERT INTO users(email,name,accepted,mealchoice,datetimeCreated) VALUES($1, $2,$3,$4,$5)',
+     values: [datain.email,datain.name, datain.accept,datain.foodchoice,date],
   }
    client.query(query, (err, res) => {
      if (err) {
        console.log(err.stack)
      }
    })
-      data={};
-      data.response="SUCCESS";
-
-   callback(null,data,resb);
+   datain.type="register";
+   callback(null,datain,resb);
    }
 }
