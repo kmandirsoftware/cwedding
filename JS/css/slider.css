@@ -1,0 +1,14 @@
+.card {
+    box-shadow: 0 40px 80px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.containerforcard {
+    font-family:Brush Script Std, cursive;
+    font-weight:bold;
+    font-size:1.6em;
+    text-align:center
+}
