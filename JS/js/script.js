@@ -17,10 +17,10 @@ URL:            http://themeforest.net/user/Beeskip
 	People Slider
 ---------------------------------- --------------------------------*/
 
-    if (jQuery('body').hasClass('main-page')) {
-       var peoplestack = new Photostack(document.getElementById('people-photostack'));
+    //if (jQuery('body').hasClass('main-page')) {
+    //   var peoplestack = new Photostack(document.getElementById('people-photostack'));
 
-    }
+    //}
 
 
 /*------------------------------------------
@@ -200,7 +200,7 @@ URL:            http://themeforest.net/user/Beeskip
 --------------------------------------*/
 jQuery(document).ready(function(){
 
-
+    knslider();
     var width = window.innerWidth || document.documentElement.clientWidth;
     $("#mainslider img").each(function() {
         var oldSrc = $(this).attr('src');
