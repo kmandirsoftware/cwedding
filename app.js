@@ -38,6 +38,7 @@ app.get('/',function(req,res){
 app.get('/register',function(req,res){
    console.log(req.query);
    user.register(req.query,res,process_data);
+   webinfo.entry('register.html',res,process_data);
 });
 app.get('/pagetrack',function(req,res){
     console.log(req.query.page);
@@ -45,6 +46,7 @@ app.get('/pagetrack',function(req,res){
 });
 app.post('/sendinfo', function(req, response) {
     user.register(req.body,response,process_data);
+    webinfo.entry('register.html',res,process_data);
 });
 app.set('port', (process.env.PORT || 5000));
 app.listen(app.get('port'), function() {
