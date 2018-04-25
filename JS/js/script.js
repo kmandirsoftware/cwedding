@@ -177,8 +177,8 @@ URL:            http://themeforest.net/user/Beeskip
     var today = new Date();
 
     var target = new Date(today);
-    target.setDate(134); // Set no. of days from today
-    target.setHours(0, 15, 0, 0);
+    target.setDate(129); // Set no. of days from today
+    target.setHours(0, 3, 50, 0);
 
     // Countdown start from yesterday
     var yesterday = new Date(today);
