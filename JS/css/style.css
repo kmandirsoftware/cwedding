@@ -1518,3 +1518,27 @@ figcaption p {
 
 .copyright span {font-size: 10px;}
 
+ .owl-carousel div h2, .owl-carousel div .textoverlay{
+    position: absolute;
+  bottom: 10%;
+  left: 51%;
+  /*
+    top: 75%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    */
+  font-family: "Parisienne", cursive;
+  color: #fff;
+  font-size: 24px;
+ 
+}
+.owl-carousel div h1, .owl-carousel div .textoverlay{
+  font-family: "Parisienne", cursive;
+  font-size: 48px;
+  color: #fff;
+}
+.owl-carousel div p, .owl-carousel div .textoverlay{
+  font-family: "Parisienne", cursive;
+  font-size: 24px;
+  color: #fff;
+}
