@@ -200,7 +200,6 @@ URL:            http://themeforest.net/user/Beeskip
 --------------------------------------*/
 jQuery(document).ready(function(){
 
-    knslider();
     var width = window.innerWidth || document.documentElement.clientWidth;
     $("#mainslider img").each(function() {
         var oldSrc = $(this).attr('src');
