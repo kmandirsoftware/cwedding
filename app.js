@@ -45,6 +45,7 @@ app.get('/pagetrack',function(req,res){
    webinfo.entry(req.query.page,res,process_data);
 });
 app.post('/sendinfo', function(req, response) {
+    console.log(req.body);
     user.register(req.body,response,process_data);
     webinfo.entry('register.html',response,process_data);
 });
